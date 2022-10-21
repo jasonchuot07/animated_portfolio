@@ -11,10 +11,10 @@ const Projects = (props: Props) => {
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5}}
-        className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+        className="h-screen pb-4 relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
             <h3 className="absolute top-24 uppercase text-gray-500 text-2xl tracking-[20px]">Projects</h3>
 
-            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+            <div className='relative w-full flex overflow-x-scroll scrollbar overflow-y-hidden snap-x snap-mandatory z-20'>
                 {projects.map((project, i) => (
                     <div className='w-screen pt-36 flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center h-screen'>
                         <motion.img 
@@ -41,7 +41,7 @@ const Projects = (props: Props) => {
                 ))}
             </div>
 
-            <div className="w-full absolute top-[25%] bg-[#29c574]/10 left-0 h-[500px] -skew-y-12" />
+            <div className="w-full absolute top-[25%] bg-[#30ffc1]/20 left-0 h-[500px] -skew-y-12" />
         </motion.div>
     )
 }
